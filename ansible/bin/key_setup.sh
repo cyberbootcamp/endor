@@ -3,6 +3,8 @@
 export AUTH_KEYS=~/.ssh/authorized_keys
 export ENDORE_KEY=/.keys/id_endore
 
+ls ~/.ssh || mkdir -p ~/.ssh/ && chmod 0600 ~/.ssh
+
 ls ${AUTH_KEYS} || touch ${AUTH_KEYS} && chmod 0600 ${AUTH_KEYS}
 
 ls ${ENDORE_KEY} || ssh-keygen -f ${ENDORE_KEY}
