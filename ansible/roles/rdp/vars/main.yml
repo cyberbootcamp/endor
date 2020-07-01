@@ -1,0 +1,35 @@
+packages:
+  - wget
+  - apt-transport-https
+  - gnupg
+  - lsb-release
+  - trivy
+  - nginx
+  - apache2
+  - docker
+  - docker.io
+  - docker-compose
+  - xfce4
+  - xfce4-session
+  - tightvncserver
+  - chromium-browser
+  - xfce4
+  - xrdp
+  - xorgxrdp
+  - xubuntu-desktop
+  - xorg
+  - xfce4-goodies
+  - dbus-x11
+  - x11-xserver-utils
+  - jq
+
+users:
+  - {
+      name: "instructor",
+    }
+  - {
+      name: "student"
+    }
+  - {
+      name: "kali"
+    }

@@ -1,0 +1,19 @@
+---
+#- name: Add DNS Entry to /etc/hosts
+#  lineinfile:
+#    path: /etc/hosts
+#    line: 10.55.55.3  ns1.amani.local ns1
+#  become: true
+
+- name: Create groups.
+  group:
+    name: "{{ item.name }}"
+    state: present
+  become: true
+  with_items:
+    - "{{ users }}"
+  register: output
+
+- name: Created Groups
+  debug:
+    msg: "{{ output }}"
