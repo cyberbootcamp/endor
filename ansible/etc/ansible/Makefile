@@ -1,3 +1,4 @@
+PWD = $(shell pwd)
 .PHONY: default
 default:
 	echo default target
@@ -11,7 +12,9 @@ build:
 .PHONY: start
 start:
 	#sudo -E docker run -d -p 3128:3128 -p 3129:3129 --name squid squid
-	sudo -E docker run -d --name ansible kirscht/ansible-docker:latest
+	sudo -E docker run -d --name ansible kirscht/ansible-docker:latest \
+		--mount type=bind,source="$(PWD)",target="/ansible"
+		# --mount type=bind,source="$(PWD)/etc/ansbile"
 
 .PHONY: connect
 connect:
