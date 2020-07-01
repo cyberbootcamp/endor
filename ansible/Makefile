@@ -12,8 +12,10 @@ build:
 .PHONY: start
 start:
 	#sudo -E docker run -d -p 3128:3128 -p 3129:3129 --name squid squid
-	sudo -E docker run -d --name --mount type=bind,source="$(PWD)",target="/ansible" --mount type=bind,source="$(PWD)/etc/ansible",target="/etc/ansible" ansible kirscht/ansible-docker:latest
-		#
+	sudo -E docker run -d --name \
+		--mount type=bind,source="$(PWD)",target="/ansible" \
+		ansible kirscht/ansible-docker:latest
+		#		--mount type=bind,source="$(PWD)/etc/ansible",target="/etc/ansible" \
 
 .PHONY: connect
 connect:
