@@ -29,3 +29,7 @@ stop:
 .PHONY: rm
 rm: stop
 	sudo -E docker rm ansible
+
+.PHONY: pull
+pull:
+	sudo -E docker pull kirscht/ansible-docker:latest
