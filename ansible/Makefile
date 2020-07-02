@@ -15,6 +15,7 @@ start:
 	sudo -E docker run -d --name ansible \
 		--mount type=bind,source="$(PWD)",target="/ansible" \
 		--mount type=bind,source="$(PWD)/etc/ansible",target="/etc/ansible" \
+		--mount type=bind,source="$(PWD)/log",target="/var/log/entrypoint" \
 		kirscht/ansible-docker:latest
 		#
 
