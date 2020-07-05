@@ -1,1 +1,1 @@
-# endore
+# endor

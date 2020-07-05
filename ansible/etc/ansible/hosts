@@ -49,7 +49,7 @@
 #owaspbwa ansible_host=192.168.1.90	ansible_user=root ansible_private_key_file=/home/korben/.ssh/id_ansible
 
 localhost	ansible_connection=local
-endore	ansible_host=10.55.55.3 ansible_user=vagrant
+endor	ansible_host=10.55.55.1 ansible_user=vagrant
 kamino	ansible_host=10.55.55.2 ansible_user=vagrant
 
 [rdp]

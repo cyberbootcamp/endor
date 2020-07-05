@@ -2,5 +2,5 @@
 - name: Add DNS Entry to /etc/hosts
   lineinfile:
     path: /etc/hosts
-    line: 10.55.55.3  ns1.amani.local ns1
+    line: 10.55.55.1  ns1.amani.local ns1
   become: true

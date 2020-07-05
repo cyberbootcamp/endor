@@ -1,4 +1,4 @@
 ---
-- hosts: endore
+- hosts: endor
   roles:
     - roles/dns-master
