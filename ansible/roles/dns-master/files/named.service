@@ -2,7 +2,7 @@
 Description=Named
 
 [Service]
-Type=forking
+Type=oneshot
 ExecStart=/ansible/roles/dns-master/files/startup.script
 
 [Install]
