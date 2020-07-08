@@ -20,6 +20,6 @@ ls ${AUTH_KEYS} || touch ${AUTH_KEYS} && chmod 0600 ${AUTH_KEYS}
 
 ls ${VAGRANT_KEY} || ssh-keygen -N ""  -f ${VAGRANT_KEY}
 ls ${VAGRANT_KEY}.pub && cat ${VAGRANT_KEY}.pub >> ${AUTH_KEYS} && \
-cat ~/.ssh/*.pub > ${AUTH_KEYS}
+cat ~/.ssh/*.pub >> ${AUTH_KEYS}
 #cp ${AUTH_KEYS} ${AUTH_KEYS}.presort
 #  sort -u ${AUTH_KEYS}.presort -o ${AUTH_KEYS}

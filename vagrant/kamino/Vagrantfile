@@ -80,7 +80,7 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder "../../.keys", "/.keys"
+  config.vm.synced_folder "../../.keys", "/home/vagrant/.ssh"
   config.vm.synced_folder "../../ansible", "/ansible"
   config.vm.synced_folder "../../../repos", "/repos"
   config.vm.synced_folder "../../../Downloads", "/Downloads"
@@ -119,5 +119,6 @@ Vagrant.configure("2") do |config|
      apt-get install -yq apache2 make docker docker.io
      rm /etc/resolv.conf
      cp /vagrant/resolv.conf /etc/resolv.conf
+     . /ansible/bin/key_setup.sh
 SHELL
 end
