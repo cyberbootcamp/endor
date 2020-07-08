@@ -12,7 +12,6 @@ packages:
   - xfce4
   - xfce4-session
   - tightvncserver
-  - chromium-browser
   - xfce4
   - xrdp
   - xorgxrdp
