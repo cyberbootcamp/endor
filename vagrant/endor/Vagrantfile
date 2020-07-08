@@ -83,6 +83,9 @@ Vagrant.configure("2") do |config|
      rm /etc/resolv.conf
      cp /vagrant/resolv.conf /etc/resolv.conf
      . /ansible/bin/key_setup.sh
+     cp /ansible/roles/dns-master/files/named.service /etc/systemd/system/.
+     systemctl enable named
+     systemctl start named
      #ifconfig eth1:0 10.55.55.2 netmask 255.255.255.0 up
 SHELL
 end
