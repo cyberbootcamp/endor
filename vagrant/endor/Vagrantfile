@@ -79,7 +79,7 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
    config.vm.provision "shell", inline: <<-SHELL
      apt-get update
-     apt-get install -yq apache2 make docker docker.io ansible
+     apt-get install -yq apache2 make docker docker.io net-tools ansible
      rm /etc/resolv.conf
      cp /vagrant/resolv.conf /etc/resolv.conf
      . /ansible/bin/key_setup.sh
