@@ -82,11 +82,6 @@ Vagrant.configure("2") do |config|
      apt-get install -yq apache2 make docker docker.io ansible
      rm /etc/resolv.conf
      cp /vagrant/resolv.conf /etc/resolv.conf
-     mkdir -p /home/vagrant/.ssh/config.d
-     echo 'Include ~/.ssh/config.d/*' > /home/vagrant/.ssh/config
-     cp /ansible/ssh_config/endor /home/vagrant/.ssh/config.d/.
-     chown -R vagrant:vagrant /home/vagrant/.ssh
-     chmod -R 0700 /home/vagrant/.ssh
      . /ansible/bin/key_setup.sh
      #ifconfig eth1:0 10.55.55.2 netmask 255.255.255.0 up
 SHELL

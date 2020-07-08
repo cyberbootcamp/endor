@@ -1,0 +1,2 @@
+[How can I run ssh-add automatically, without a password prompt?](https://unix.stackexchange.com/questions/90853/how-can-i-run-ssh-add-automatically-without-a-password-prompt)
+[Automating “enter” keypresses for bash script generating ssh keys](https://stackoverflow.com/questions/3659602/automating-enter-keypresses-for-bash-script-generating-ssh-keys#:~:text=ssh-keygen%20-t%20rsa%20-N%20%22%22%20-f%20my.key%20-N,you%20needing%20to%20supply%20any%20enter%20keys%20%3A%29)
