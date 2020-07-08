@@ -1,0 +1,7 @@
+Host kamino
+    HostName kamino
+    User     vagrant
+    IdentityFile ~/.ssh/id_vagrant
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    AddKeysToAgent yes
