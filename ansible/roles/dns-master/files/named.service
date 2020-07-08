@@ -3,7 +3,7 @@ Description=Named
 
 [Service]
 Type=forking
-ExecStart=ifconfig eth1:0 10.55.55.2 netmask 255.255.255.0 up
+ExecStart=/bind/Docker/startup.script
 
 [Install]
 WantedBy=multi-user.target

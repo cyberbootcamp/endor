@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd /bind/Docker
+ifconfig eth1:0 10.55.55.2 netmask 255.255.255.0 up
+
+make pull
+make rm
+make start
+
+exit 0
