@@ -4,7 +4,6 @@ packages:
   - apt-transport-https
   - gnupg
   - lsb-release
-  - trivy
   - nginx
   - apache2
   - docker
