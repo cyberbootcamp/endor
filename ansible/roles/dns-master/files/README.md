@@ -1,0 +1,1 @@
+[Mastering Embedded Linux Programming - systemd](https://my.safaribooksonline.com/book/programming/linux/9781787283282/starting-up-the-init-program/7b645bd6_5d21_4d97_b7b9_fac393eb9295_xhtml?query=((systemd))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODcyODMyODIlMkY3YjY0NWJkNl81ZDIxXzRkOTdfYjdiOV9mYWMzOTNlYjkyOTVfeGh0bWwmcXVlcnk9KChzeXN0ZW1kKSk=)

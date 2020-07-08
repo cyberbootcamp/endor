@@ -1,0 +1,4 @@
+---
+- hosts: endor
+  roles:
+    - roles/test
