@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 export AUTH_KEYS=~/.ssh/authorized_keys
 export ENDOR_KEY=~/.ssh/id_endor
