@@ -1,8 +1,7 @@
 Host endor
     HostName endor
     User     vagrant
-    IdentityFile /Users/korbenkirscht/.ssh/vagrant
+    IdentityFile ~/.ssh/id_endor
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
     AddKeysToAgent yes
-    UseKeyChain yes
