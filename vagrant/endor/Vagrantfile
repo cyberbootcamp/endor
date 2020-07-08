@@ -84,6 +84,7 @@ Vagrant.configure("2") do |config|
      cp /vagrant/resolv.conf /etc/resolv.conf
      mkdir -p /home/vagrant/.ssh/config.d
      echo 'Include ~/.ssh/config.d/*' > /home/vagrant/.ssh/config
+     cp /ansible/ssh_config/endor /home/vagrant/.ssh/config.d/.
      chown -R vagrant:vagrant /home/vagrant/.ssh
      chmod -R 0700 /home/vagrant/.ssh
      #ifconfig eth1:0 10.55.55.2 netmask 255.255.255.0 up
