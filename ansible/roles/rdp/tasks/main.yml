@@ -17,3 +17,21 @@
 - name: Created Groups
   debug:
     msg: "{{ output }}"
+
+   - name: Install and Update Software
+     apt:
+       name: "{{ packages }}"
+       update_cache: yes
+       autoremove: yes
+       autoclean: yes
+       install_recommends: yes
+       state: latest
+       #validate_certs: false
+     environment:
+#       http_proxy: http://192.168.1.76:3128/
+       # https_proxy: https://192.168.1.76:3128/
+     become: true
+     register: output
+
+    - name: Installed and Updated Software
+      debug:
