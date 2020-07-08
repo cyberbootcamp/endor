@@ -1,4 +1,4 @@
 ---
-- hosts: endor
+- hosts: rdp
   roles:
     - roles/test
