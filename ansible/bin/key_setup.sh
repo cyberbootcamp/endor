@@ -10,4 +10,4 @@ ls ${AUTH_KEYS} || touch ${AUTH_KEYS} && chmod 0600 ${AUTH_KEYS}
 ls ${ENDOR_KEY} || ssh-keygen -f ${ENDOR_KEY}
 ls ${ENDOR_KEY}.pub && cat ${ENDOR_KEY}.pub >> ${AUTH_KEYS} && \
 cp ${AUTH_KEYS} ${AUTH_KEYS}.presort
-  sort -u ${AUTH_KEYS}.presort > ${AUTH_KEYS}
+  sort -u ${AUTH_KEYS}.presort -o ${AUTH_KEYS}
