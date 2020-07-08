@@ -2,8 +2,6 @@
 
 cd /bind/Docker
 
-git pull
-
 ifconfig eth1:0 10.55.55.2 netmask 255.255.255.0 up
 
 make pull
