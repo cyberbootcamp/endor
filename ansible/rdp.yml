@@ -1,4 +1,4 @@
 ---
 - hosts: rdp
   roles:
-    - roles/test
+    - roles/rdp
