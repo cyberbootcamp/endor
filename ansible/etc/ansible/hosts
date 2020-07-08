@@ -50,7 +50,7 @@
 
 localhost	ansible_connection=local
 endor	ansible_host=10.55.55.2 ansible_user=vagrant
-kamino	ansible_host=10.55.55.3 ansible_user=vagrant
+kamino	 ansible_user=vagrant
 
 [rdp]
 kamino
