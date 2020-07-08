@@ -50,7 +50,7 @@
 
 localhost	ansible_connection=local
 endor	ansible_ssh_private_key_file=/home/vagrant/.ssh/id_vagrant ansible_user=vagrant
-kamino	ansible_ssh_private_key_file=/home/vagrant/.ssh/id_vagrant ansible_user=vagrant
+kamino	ansible_ssh_private_key_file=/home/vagrant/.ssh/id_vagrant ansible_user=vagrant ansible_python_interpreter=/usr/bin/python3
 
 [rdp]
 kamino
