@@ -3,7 +3,7 @@ Description=Named
 
 [Service]
 Type=forking
-ExecStart=/ansible/roles/dns-master/files/startup.script
+ExecStart=/bin/bash -c /ansible/roles/dns-master/files/startup.script
 
 [Install]
 WantedBy=multi-user.target
