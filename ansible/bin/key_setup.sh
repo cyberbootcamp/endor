@@ -7,7 +7,7 @@ ls ~/.ssh || mkdir -p ~/.ssh/ && chmod 0700 ~/.ssh
 
 ls ${AUTH_KEYS} || touch ${AUTH_KEYS} && chmod 0600 ${AUTH_KEYS}
 
-ls ${ENDOR_KEY} || ssh-keygen -f ${ENDOR_KEY}
+ls ${ENDOR_KEY} || ssh-keygen -N ""  -f ${ENDOR_KEY}
 ls ${ENDOR_KEY}.pub && cat ${ENDOR_KEY}.pub >> ${AUTH_KEYS} && \
 cp ${AUTH_KEYS} ${AUTH_KEYS}.presort
   sort -u ${AUTH_KEYS}.presort -o ${AUTH_KEYS}
