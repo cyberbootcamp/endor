@@ -52,7 +52,7 @@ Vagrant.configure("2") do |config|
   # config.vm.synced_folder "../data", "/vagrant_data"
   config.vm.synced_folder	"../../../bind",	"/bind"
   config.vm.synced_folder	"../../",	"/vagrant"
-  config.vm.synced_folder "../../.keys", "/home/thedr/.ssh"
+  config.vm.synced_folder "../../.keys", "/thedr/.ssh"
   config.vm.synced_folder "../../ansible", "/ansible"
   config.vm.synced_folder "../../ansible/etc/ansible/", "/etc/ansible/"
   config.vm.synced_folder "../../../repos", "/repos"
