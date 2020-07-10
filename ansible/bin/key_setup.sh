@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 export THEUSER="thedr"
-export THEHOME="/dr"
+export THEHOME="/thedr"
 export SSHDIR=${THEHOME}/.ssh
 
 export AUTH_KEYS=${SSHDIR}/authorized_keys
@@ -11,8 +11,8 @@ function remount_ssh_dir () {
      mkdir -p ${SSHDIR}/config.d
      echo 'Include ~/.ssh/config.d/*' > ${SSHDIR}/config
      cp /ansible/ssh_config/endor ${SSHDIR}/config.d/.
-     chown -R ${THEUSER}:${THEUSER} ${SSHDIR}
-     chmod -R 0700 ${SSHDIR}
+     chown -R ${THEUSER}:${THEUSER} ${THEHOME}
+     chmod -R 0700 ${THEHOME}
 }
 
 remount_ssh_dir
