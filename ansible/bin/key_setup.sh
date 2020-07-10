@@ -11,8 +11,6 @@ function remount_ssh_dir () {
      mkdir -p ${SSHDIR}/config.d
      echo 'Include ~/.ssh/config.d/*' > ${SSHDIR}/config
      cp /ansible/ssh_config/endor ${SSHDIR}/config.d/.
-     chown -R ${THEUSER}:${THEUSER} ${THEHOME}
-     chmod -R 0700 ${THEHOME}
 }
 
 remount_ssh_dir
@@ -27,3 +25,6 @@ ls ${VAGRANT_KEY}.pub && cat ${VAGRANT_KEY}.pub >> ${AUTH_KEYS} && \
 cat ${SSHDIR}/*.pub >> ${AUTH_KEYS}
 #cp ${AUTH_KEYS} ${AUTH_KEYS}.presort
 #  sort -u ${AUTH_KEYS}.presort -o ${AUTH_KEYS}
+
+     chown -R ${THEUSER}:${THEUSER} ${THEHOME}
+     chmod -R 0700 ${THEHOME}
