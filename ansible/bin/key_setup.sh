@@ -11,7 +11,7 @@ function remount_ssh_dir () {
      mkdir -p ${SSHDIR}/config.d
      echo 'Include ~/.ssh/config.d/*' > ${SSHDIR}/config
      cp /ansible/ssh_config/endor ${SSHDIR}/config.d/.
-     chown -R vagrant:vagrant ${SSHDIR}
+     chown -R ${THEUSER}:${THEUSER} ${SSHDIR}
      chmod -R 0700 ${SSHDIR}
 }
 
