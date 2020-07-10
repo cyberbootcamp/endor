@@ -84,7 +84,7 @@ Vagrant.configure("2") do |config|
    config.vm.provision "shell", inline: <<-SHELL
      apt-get update
      apt-get install -yq apache2 make docker docker.io net-tools ansible
-     useradd -d /thedr -c thedr -g thedr -m -s /bin/bash -u 2001 -U
+     useradd -d /thedr -c thedr -m -s /bin/bash -u 2001 -U thedr
      rm /etc/resolv.conf
      cp /vagrant/resolv.conf /etc/resolv.conf
      . /ansible/bin/key_setup.sh
